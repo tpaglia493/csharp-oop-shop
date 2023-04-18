@@ -1,5 +1,5 @@
 ﻿/*
-Gli altri attributi siano accessibili sia in lettura che in scrittura
+
 Il prodotto esponga sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva
 Il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice + nome
 Testate poi i vostri oggetti Prodotto, istanziandoli e provando ad interagirci per testare tutti i metodi che avete previsto.
@@ -19,9 +19,11 @@ using csharp_oop_shop;
 //TEST TO GENERATE CODES
 
 Product test = new Product("test1","è solo un test",25.00f,0.22f);
+string info = test.GetInfo();
 
 Console.WriteLine(test.getCode());
 Console.WriteLine(test.Name);
 Console.WriteLine(test.Description);
 Console.WriteLine(test.Price);
 Console.WriteLine(test.Iva);
+Console.WriteLine(info);

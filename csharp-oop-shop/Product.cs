@@ -64,6 +64,11 @@ namespace csharp_oop_shop
             this.code = code.Next(1, 99999999);
         }
 
+        public string GetInfo()
+        {
+            string info = this.code +" " + Name;
+                 return info;
+        }
        
     }
 }
