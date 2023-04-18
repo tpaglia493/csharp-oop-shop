@@ -70,5 +70,10 @@ namespace csharp_oop_shop
                  return info;
         }
        
+        public float GetIvaPrice()
+        {
+            float ivaPrice = Price + Price * Iva;
+            return ivaPrice;
+        }
     }
 }

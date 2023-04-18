@@ -27,3 +27,4 @@ Console.WriteLine(test.Description);
 Console.WriteLine(test.Price);
 Console.WriteLine(test.Iva);
 Console.WriteLine(info);
+Console.WriteLine(test.GetIvaPrice());
