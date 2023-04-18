@@ -32,9 +32,8 @@ Stampate poi l’elenco dei vostri prodotti che avete previsto nel negozio. (Sug
 using csharp_oop_shop;
 
 //TEST TO GENERATE CODES
-for(int i = 0; i < 100; i++) { 
+
 Product test = new Product("test1");
 
 Console.WriteLine(test.getCode());
-
-}
+Console.WriteLine(test.Name);

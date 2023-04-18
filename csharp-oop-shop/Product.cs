@@ -6,11 +6,18 @@ using System.Threading.Tasks;
 
 namespace csharp_oop_shop
 {
+    /*
+     Gli altri attributi siano accessibili sia in lettura che in scrittura
+     Il prodotto esponga sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva
+     Il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice + nome
+     Testate poi i vostri oggetti Prodotto, istanziandoli e provando ad interagirci per testare tutti i metodi che avete previsto.
+      */
     public class Product
     {
-        //ATTRIBUTES
+        //ATTRIBUTES & PROPERTIES
         private int code;
         private string name;
+        public string Name{ get { return this.name; } set { this.name = value; } }
         private string description;
         private float price;
         private float iva;
@@ -19,19 +26,21 @@ namespace csharp_oop_shop
 
 
         //CONSTRUCTOR
+    
         public Product(string name) 
         { 
             this.name = name;
             CodeGenerator();
+        }    /*
+        
+        public Product(string name)
+        {
+            name = Name;
+            CodeGenerator();
         }
-        /*
-        Alla creazione di un nuovo prodotto il codice sia valorizzato con un numero random
-        Il codice prodotto sia accessibile solo in lettura
-        Gli altri attributi siano accessibili sia in lettura che in scrittura
-        Il prodotto esponga sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva
-        Il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice + nome
-        Testate poi i vostri oggetti Prodotto, istanziandoli e provando ad interagirci per testare tutti i metodi che avete previsto.
-         */
+
+*/
+
         //GETTERS
         public int getCode()
         {
