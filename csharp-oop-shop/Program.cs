@@ -1,19 +1,4 @@
 ﻿/*
-nome repo: csharp-oop-shop
-Nel progetto csharp-oop-shop, creare la classe Prodotto che gestisce i prodotti dello shop.
-Un prodotto è caratterizzato da:
- codice (numero intero)
-nome
-descrizione
-prezzo
-iva
-
-
-Usate opportunamente i livelli di accesso (public, private), i costruttori, i metodi getter e setter (o eventualmente le properties) 
-ed eventuali altri metodi di “utilità” per fare in modo che:
-
-Alla creazione di un nuovo prodotto il codice sia valorizzato con un numero random
-Il codice prodotto sia accessibile solo in lettura
 Gli altri attributi siano accessibili sia in lettura che in scrittura
 Il prodotto esponga sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva
 Il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice + nome
@@ -33,7 +18,10 @@ using csharp_oop_shop;
 
 //TEST TO GENERATE CODES
 
-Product test = new Product("test1");
+Product test = new Product("test1","è solo un test",25.00f,0.22f);
 
 Console.WriteLine(test.getCode());
 Console.WriteLine(test.Name);
+Console.WriteLine(test.Description);
+Console.WriteLine(test.Price);
+Console.WriteLine(test.Iva);
