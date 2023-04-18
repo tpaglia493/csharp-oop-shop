@@ -27,3 +27,14 @@ Usando un array, dichiarate un elenco dei prodotti di un negozio
 e inseriteci al suo interno qualche prodotto che vi aspettate di trovare nel negozio.
 Stampate poi l’elenco dei vostri prodotti che avete previsto nel negozio. (Suggerimento potreste guardarvi List) 
  */
+
+
+using csharp_oop_shop;
+
+//TEST TO GENERATE CODES
+for(int i = 0; i < 100; i++) { 
+Product test = new Product("test1");
+
+Console.WriteLine(test.getCode());
+
+}
