@@ -1,10 +1,5 @@
 ﻿/*
 
-Il prodotto esponga sia un metodo per avere il prezzo base che uno per avere il prezzo comprensivo di iva
-Il prodotto esponga un metodo per avere il nome esteso, ottenuto concatenando codice + nome
-Testate poi i vostri oggetti Prodotto, istanziandoli e provando ad interagirci per testare tutti i metodi che avete previsto.
-
-
 BONUS:
 create un metodo che restituisca il codice con un pad left di '0' per arrivare a 8 caratteri (ad esempio codice 91 diventa 00000091, 
 mentre codice 123445567 resta come è)
@@ -18,10 +13,11 @@ using csharp_oop_shop;
 
 //TEST TO GENERATE CODES
 
-Product test = new Product("test1","è solo un test",25.00f,0.22f);
+
+Product test = new Product("test1","è solo un test",25.00f,22f);
 string info = test.GetInfo();
 
-Console.WriteLine(test.getCode());
+Console.WriteLine(test.getFormattedCodePadLeft8());
 Console.WriteLine(test.Name);
 Console.WriteLine(test.Description);
 Console.WriteLine(test.Price);

@@ -56,6 +56,8 @@ namespace csharp_oop_shop
             return this.code;
         }
 
+    
+
         //METHODS
 
         private void CodeGenerator() 
@@ -63,17 +65,25 @@ namespace csharp_oop_shop
             Random code = new Random();
             this.code = code.Next(1, 99999999);
         }
+        public string getFormattedCodePadLeft8()
+        {
+            string codeString = this.code.ToString();
+            string codeStringPadded = codeString.PadLeft(8, '0');
+            return codeStringPadded;
+
+        }
 
         public string GetInfo()
         {
             string info = this.code +" " + Name;
                  return info;
         }
-       
+
         public float GetIvaPrice()
         {
-            float ivaPrice = Price + Price * Iva;
+            float ivaPrice = price + (price * iva) / 100;
             return ivaPrice;
         }
+       
     }
 }
